@@ -3,6 +3,8 @@ jobs:
   build:
     docker:
       - image: cimg/base:2022.09
+    parallelism: 20
+    resource_class: large
 
     steps:
       - checkout
